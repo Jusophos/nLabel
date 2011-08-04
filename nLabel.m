@@ -49,7 +49,7 @@
     float actualFontSize;
     
     CGSize oneLineSize = [self.text sizeWithFont:self.font minFontSize:self.minimumFontSize actualFontSize:&actualFontSize forWidth:self.frame.size.width lineBreakMode:UILineBreakModeWordWrap];
-    CGSize size = [self.text sizeWithFont:self.font constrainedToSize:CGSizeMake(self.frame.size.width, 500) lineBreakMode:UILineBreakModeWordWrap];
+    CGSize size = [self.text sizeWithFont:self.font constrainedToSize:CGSizeMake(self.frame.size.width, (self.text.length * 21)) lineBreakMode:UILineBreakModeWordWrap];
     
     CGRect frame = self.frame;
     frame.size.height = size.height;
