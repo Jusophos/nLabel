@@ -32,5 +32,5 @@ The following options are available:
 
 Usage:
 
-``nLabel *label 	 = [[nLabel alloc] init];
-label.trimHTMLTags = YES;``
+``nLabel *label 	 = [[nLabel alloc] init];``
+``label.trimHTMLTags = YES;``
