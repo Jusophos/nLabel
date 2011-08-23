@@ -12,6 +12,8 @@
     BOOL setupCompleted;
 }
 
+@property (assign, readwrite) BOOL trimHTMLTags;
+
 - (void)setup;
 
 @end

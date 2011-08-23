@@ -9,6 +9,8 @@
 
 @implementation nLabel
 
+@synthesize trimHTMLTags = _trimHTMLTags;
+
 #pragma mark - Memory management
 - (id)init
 {
@@ -35,6 +37,7 @@
     }
     
     setupCompleted = YES;
+    _trimHTMLTags = NO;
 }
 
 - (void)awakeFromNib {
@@ -43,6 +46,13 @@
 }
 
 - (void)setText:(NSString *)text {
+
+    if (_trimHTMLTags) {
+        
+        NSRegularExpression *expr = [NSRegularExpression regularExpressionWithPattern:@"\\<([\\w*])\\>([^\\<]*)\\<\\/([\\w*])\\>" options:NSRegularExpressionCaseInsensitive error:nil];
+        
+        text = [expr stringByReplacingMatchesInString:text options:0 range:NSMakeRange(0, [text length]) withTemplate:@"$2"];
+    }
     
     [super setText:text];
     
@@ -58,5 +68,7 @@
     int lines = (int)((size.height / oneLineSize.height) + 0.5);
     self.numberOfLines = lines;
 }
+
+
 
 @end
