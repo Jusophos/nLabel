@@ -17,7 +17,7 @@ The nLabel provides a subclass of an UILabel. It auto expends its height dependi
 	
 2. Import the header file where do you want to use it
 
-	- Example: #import "nLabel.h"
+	- Example: ``#import "nLabel.h"``
 	
 3. Add the string where do you want, whether in the interface builder or programmatically:
 
@@ -35,3 +35,10 @@ Usage:
 ``nLabel *label 	 = [[nLabel alloc] init];``
 
 ``label.trimHTMLTags = YES;``
+
+## Coming soon
+
+* HTML trimming supports attributes
+* HTML trimming supports CDATA
+* HTML trimming supports subtags
+* Interface Builder extension
