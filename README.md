@@ -28,7 +28,7 @@ Just add the text with the "setText" selector and the rest will be done by nLabe
 The following options are available:
 
 * *trimHTMLTags*
-	Removes all html tags from the text.
+	* Removes all html tags from the text.
 
 Usage:
 
