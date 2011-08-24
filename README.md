@@ -9,6 +9,10 @@ This software is released under the terms of LGPL.
 ## Description
 The nLabel provides a subclass of an UILabel. It auto expends its height depending of the content length and has html trimming feature.
 
+## Requirements
+
+iOS 4.0+
+
 ## Install
 1. Add the following files to your xCode project:
 	
