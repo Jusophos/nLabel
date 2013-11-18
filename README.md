@@ -40,7 +40,7 @@ Usage:
 
 ``label.trimHTMLTags = YES;``
 
-## Coming soon
+## Missing
 
 * HTML trimming supports attributes
 * HTML trimming supports CDATA
